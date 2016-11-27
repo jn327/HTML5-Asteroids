@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<html lang = "en"> <!-- language flag, used by screen readers -->
+<head>
+  <meta charset = "uft-8" /> <!-- character set definition -->
+	<meta name="apple-mobile-web-app-capable" content="yes"> <!-- if the page gets added to homescreen then it will go full screen -->
+	<meta name="mobile-web-app-capable" content="yes"> <!-- see http://www.html5rocks.com/en/mobile/fullscreen/ -->
+
+  <title>Asteroids Game</title>
+  <!-- imports  CSS definitions with media queries-->
+  <link rel= "stylesheet" href ="styles/layout.css"> 
+  
+	<link rel="stylesheet" type="text/css" href="styles/addtohomescreen.css">
+	<script src="scripts/addtohomescreen.js"></script>
+	<script>
+	addToHomescreen();
+	</script>
+	
+</head>
+<body>
+	<canvas id="canvas1">
+	Your browser does not support HTML5 canvas.</canvas>
+
+	<!-- import  JavaScript --> 
+	<!-- put at the end of the document to allow faster initial loading -->
+	<!-- longer description at : http://robertnyman.com/2008/04/23/where-to-include-javascript-files-in-a-document/ -->
+	<script src="scripts/canvas1.js"></script> <!-- imports  JavaScript --> 
+</body>
+</html>
